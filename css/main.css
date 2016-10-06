@@ -1,61 +1,24 @@
 /*Inserta tu css aqui*/
 
 
+
 body{
 
 background: rgba(0,150,135,1);
-background: -moz-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 14%, rgba(223,223,223,1) 14%, rgba(223,223,223,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,135,1)), color-stop(14%, rgba(0,150,135,1)), color-stop(14%, rgba(223,223,223,1)), color-stop(100%, rgba(223,223,223,1)));
-background: -webkit-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 14%, rgba(223,223,223,1) 14%, rgba(223,223,223,1) 100%);
-background: -o-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 14%, rgba(223,223,223,1) 14%, rgba(223,223,223,1) 100%);
-background: -ms-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 14%, rgba(223,223,223,1) 14%, rgba(223,223,223,1) 100%);
-background: linear-gradient(to bottom, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 14%, rgba(223,223,223,1) 14%, rgba(223,223,223,1) 100%);
+background: -moz-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(223,223,223,1) 20%, rgba(223,223,223,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,135,1)), color-stop(20%, rgba(0,150,135,1)), color-stop(20%, rgba(223,223,223,1)), color-stop(100%, rgba(223,223,223,1)));
+background: -webkit-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(223,223,223,1) 20%, rgba(223,223,223,1) 100%);
+background: -o-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(223,223,223,1) 20%, rgba(223,223,223,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(223,223,223,1) 20%, rgba(223,223,223,1) 100%);
+background: linear-gradient(to bottom, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(223,223,223,1) 20%, rgba(223,223,223,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009687', endColorstr='#dfdfdf', GradientType=0 );
-
-
-}
-
-div{
-	display: block;
-}
-
-.box{
-	padding: 10px 16px 10px 15px;
-	box-sizing: border-box;
-	width: 100%;
-	background-color: #eee;
-
 }
 
 
 .container{
-	
-	width: 100%;
-	height: 100%;
-	
-}
-
-.search-container{
-	height: 49px;
-	
-}
-
-.message{
-    background: url(../image/chat-panel-bg.png) center center no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-}
-
-
-
-.img_ws{
-	height: 40px;
-	width: 40px;
-	cursor:pointer;
-	border-radius: 50%;
+display: table;
+width: 100%;
+height: 100%;
 }
 
 .row{
@@ -65,27 +28,213 @@ div{
 }
 
 .col-xs-4{
-
-	
 	padding: 0px
 }
 
 .col-xs-8{
-	
 	padding: 0px
+
+}
+
+.contact-container{
+	padding: 10px 16px 10px 15px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #eee;
+	height: 60px;
+	border-bottom: 1px solid #dadada;
+
+}
+
+.user-container{
+float: left;
+}
+
+.panel-control{
+float: right;
+margin-top: 10px;
+}
+
+.iconos{
+	font-size: 18px;
+	color: #777777;
+
+	margin-left: 18px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.search-container{
+	background: #fefefe;
+	padding: 10px;
+	height: 55px;
+	overflow: hidden;
+	border-bottom: 1px solid #dadada;
+	
+}
+
+.search{
+	position: relative;
+}
+
+.search input{
+	padding: 8px 0px 8px 65px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+
+}
+
+.icon-search{
+	position: absolute;
+    color: #dadada;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.img_ws{
+	height: 40px;
+	width: 40px;
+	cursor:pointer;
+	border-radius: 50%;
 }
 
 
 
-.icon{
-	height: 100px;
-	width: 100px;
+.img_contact{
+	height: 49px;
+	width: 49px;
+	cursor:pointer;
+	border-radius: 50%;
+}
+
+.contacts-container{
+	background: #fff;	
+}
+
+.contact-chat{
+	padding: 10px 16px 10px 15px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #eee;
+	height: 72px;
+	border-bottom: 1px solid #dadada;
+}
+
+.foto_contact{
+	width: 5%;
+	padding-right: 50px;
+}
+
+.foto_contact,
+.contact-info,
+.opciones{
+	display: inline-block;
+}
+
+.name-contact{
+font-size: 16px;
+font-weight: bold;
+}
+
+.cell-phone{
+font-size: 13px;
+line-height: 18px;
+}
+
+.contact-info{
+	height: 39px;
+	vertical-align: middle;
+}
+
+.opciones{
+	padding-top: 10px;
+	float: right;
+}
+
+.message
+{
+  	border-bottom: 1px solid #dadada;
+   	border-left: 1px solid #dadada;
+   /*background-color: rgba(229, 221, 213, 0.5);*/
+	background-image: url(../image/chat-panel-bg.png);
+	background-repeat: repeat;
+	background-size: contain;
+	background-color: #ede9e4;
+	overflow: auto;
+	height: 600px;
 }
 
 
-.panel-chat{
-	background-color: rgba(229, 221, 213, 0.5); 
+
+.chat-izquierdo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 25px;
+	overflow: hidden;
+	width: 50%;
+	border-radius: 4px;
 }
+
+.chat-izquierdo a{
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.chat-izquierdo p{
+	padding:0px;
+	margin:0px;
+}
+
+
+.chat-izquierdo span, .chat-derecha span{
+	float: right;
+}
+
+
+.message-1{
+	color: #33b2e2;
+}
+
+.message-2{
+	color: #e542a3;
+}
+
+.message-3{
+	color: #35cd99;
+}
+.message-4{
+	color: #e3b610;
+}
+
+.chat-derecha{
+	float: right;
+	background: #dcf8c6;
+	padding: 5px;
+	overflow: hidden;
+	border-radius: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 280px;
+	margin-right: 50px;
+	width: 190px;
+}
+
+.chat-derecha p{
+	padding:0px;
+	margin:0px;
+}
+
+
+
+
+
+	
+
+
 
 
 
@@ -100,9 +249,7 @@ div{
 	background-color: rgba(255,255,255,255,0.6);
 }
 
-.contact-chat{
-	height: 72px;
-}
+
 
 @media screen and (max-width: 900px)
 {
@@ -185,3 +332,12 @@ width: 65%;
 	}
 }
 
+
+
+@media screen and (max-width: 648px){
+
+.container{
+	overflow-x: auto;
+}
+
+}
